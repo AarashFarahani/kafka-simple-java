@@ -16,7 +16,7 @@ public class AppConfig {
     @Value("${spring.kafka.consumer.value-deserializer}") private String valueDeserializer;
 
     @Bean
-    public Gson producerConfigs() {
+    public Gson gson() {
         return new Gson();
     }
 
